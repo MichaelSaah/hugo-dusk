@@ -1,8 +1,18 @@
 {{ partial "header.html" . }}
 
+
 <article class="post">
     <h1 class="title"> {{ .Title }} </h1>
     <div class="content"> {{ .Content }} </div>
+    
+
+    {{ if .Params.photodump}}
+    {{ range .Resources.ByType "image" }}
+    <br>
+    <img src="{{ .RelPermalink }}" alt="{{ .Name }}" />
+    {{ end }}
+    {{ end }}
+    
     {{ partial "postfooter.html" . }}
 </article>
 
