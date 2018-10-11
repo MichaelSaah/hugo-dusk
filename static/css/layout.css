@@ -1,5 +1,6 @@
 body {
-  font-family: "Arial", Gadget, sans-serif;
+  font-family: "Helvetica", Gadget, sans-serif;
+  /*font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;*/
   counter-reset: heading;
   margin: 0;
   padding: 1em 0.5em 0.5em 0.5em;
@@ -172,6 +173,7 @@ th, td {
 
 .post .content p{
   margin: 0em 0em;
+  line-height: 1.4em;
 }
 
 .post-footer-data {
@@ -333,6 +335,10 @@ th, td {
   margin-bottom: 0.3em;
 }
 
+.post-preview .title:hover {
+  text-decoration: underline;
+}
+
 .post-preview a {
   text-decoration: none;
 }
@@ -359,6 +365,10 @@ th, td {
 .rmore {
   white-space:nowrap; 
   padding: 0 0 0 0.3em;
+}
+
+.rmore:hover {
+  text-decoration: underline;
 }
 
 /* terms list */
